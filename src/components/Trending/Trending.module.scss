@@ -1,0 +1,132 @@
+.trending {
+    margin: 10rem auto;
+    max-width: 1175px;
+    width: auto;
+
+    .btns button {
+        margin: 0.225rem;
+        justify-content: space-between;
+        cursor: pointer !important;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        font-size: 1.6rem;
+        font-family: Blinker, sans-serif;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        margin: 0 auto;
+        max-width: 1200px;
+
+        .trending__arrow {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
+
+    .trending__title {
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+        display: flex;
+        justify-content: center;
+
+        h3 {
+            font-family: Blinker, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    .itemContainer {
+        gap: 2rem;
+        display: flex;
+        transition: all 0.15s ease-in;
+        align-items: stretch;
+        font-size: 62.5%;
+        font-family: Blinker, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 1rem .6rem;
+        position: relative;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+    }
+
+    .row_container {
+        font-size: 62.5%;
+        font-family: Blinker, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        display: flex;
+        gap: 2.2rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding: 1rem .6rem;
+        position: relative;
+        scroll-behavior: smooth;
+        white-space: nowrap;
+    }
+
+    // Media queries
+    @media (max-width: 1200px) {
+        .trending__title h3 {
+            font-size: 1.4rem;
+        }
+
+        .itemContainer {
+            gap: 1.5rem;
+        }
+    }
+
+    @media (max-width: 992px) {
+        .trending__title h3 {
+            font-size: 1.2rem;
+        }
+
+        .itemContainer {
+            gap: 1rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin: 5rem auto;
+
+        .trending__title h3 {
+            font-size: 1rem;
+        }
+
+        .itemContainer {
+            gap: 0.8rem;
+        }
+
+        .btns button {
+            margin: 0.15rem;
+        }
+    }
+
+    @media (max-width: 576px) {
+        
+        .trending__title h3 {
+            font-size: 1.3rem;
+        }
+
+        .itemContainer {
+            gap: 1.6rem;
+           
+        }
+
+        .btns button {
+            margin: .1rem;
+        }
+    }
+}

@@ -1,0 +1,271 @@
+.checkout__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+  padding-top: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.checkout__title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.checkout__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+@media (min-width: 1208px) {
+  .checkout__details {
+    flex-direction: row;
+  }
+}
+
+.checkout__form,
+.order__summary {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1200px) {
+  .checkout__form,
+  .order__summary {
+    width: 48%;
+    margin-bottom: 0;
+  }
+}
+
+.checkout__form h2,
+.order__summary h2 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.checkout__form label {
+  display: block;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.checkout__form input,
+.checkout__form select,
+.checkout__form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checkout__form button {
+  background-color: #B6002C;
+  color: white;
+  border: 2px solid #B6002C;
+  width: 100%;
+  max-width: 200px;
+  height: 2.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 20px;
+}
+
+.checkout__form button:hover {
+  background-color: #ffffff;
+  color: #B6002C;
+}
+
+.checkout__form button:disabled {
+  background-color: #ccc;
+  color: #666;
+  border: 2px solid #ccc;
+  cursor: not-allowed;
+}
+
+.order__summary {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.order__summary .reminder {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.notify {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.notify.slide-in {
+  opacity: 1;
+}
+
+.order__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  align-items: center;
+  border-bottom: 1px solid;
+  position: relative;
+}
+
+.order__itemleft {
+  display: flex;
+  align-items: center;
+}
+
+.order__itemleft .itemQuantity {
+  display: flex;
+  align-items: center;
+  margin-left: .3rem;
+}
+
+.order__itemright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 10px;
+  width: 150px;
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.order__itemright p {
+  font-weight: 600;
+  margin: 0;
+}
+
+.removeItemButton {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.removeItemButton:hover {
+  color: darkred;
+}
+
+.order__item img {
+  width: 8rem;
+  border: 1px solid #ddd;
+  height: auto;
+  margin-right: 10px;
+}
+
+.order__item p {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 200px;
+}
+
+.order__total {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.order__total p:first-child {
+  margin-right: 5px;
+}
+
+.continueShopping {
+  display: block;
+  text-align: center;
+  margin: 5px auto 0 auto;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #000;
+  border: 2px solid #000;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.continueShopping:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.emptyCartContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emptyCartContainer p {
+  font-size: 1.4rem;
+}
+
+.emptyCartImage {
+  width: 50%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333333;
+}
+
+.checkboxLabel input[type="checkbox"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.checkboxLabel span {
+  margin-left: 5px;
+  color: #666;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
