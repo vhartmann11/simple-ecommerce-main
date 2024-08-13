@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { FaLongArrowAltLeft } from 'react-icons/fa';
 import { CartContext } from '../contexts/CartContext';
@@ -15,6 +15,12 @@ function ProductPage({ openCart }) {
   const [image, setImage] = useState(item.img);
   const { addToCart } = useContext(CartContext);
   const [notify, setNotify] = useState(false);
+
+  useEffect(() => {
+    setImage(item.img);
+    setQuantity(1);  // Resetar a quantidade quando mudar de item
+  }, [item]);
+
 
   const changeImage = (e) => setImage(e.target.src);
   const increase = () => setQuantity(quantity + 1);
