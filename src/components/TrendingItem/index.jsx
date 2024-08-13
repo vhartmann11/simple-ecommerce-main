@@ -9,8 +9,8 @@ function TrendingItem() {
       {filteredItems.map((item) => (
         <div key={item.id} className={styles.row_item}>
           <Link
-            onClick={() => window.top(0, 0)}  
             to={`/categories/product/${item.id}`}
+            onClick={() => window.scrollTo(0, 0)} 
             className={styles.row_item}
           >
             <div className={styles.item_header}>

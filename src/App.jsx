@@ -1,13 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Banner from "./components/Banner";
-import BannerReverse from "./components/BannerReverse";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import NewsLetter from "./components/NewsLetter";
-import ProudOf from "./components/ProudOf";
-import Trending from "./components/Trending";
 import Home from "./pages/Home";
 import Categories from "./pages/Categories";
 import All from "./components/CategoriesPages/All";
