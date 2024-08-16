@@ -18,7 +18,7 @@ function ProductPage({ openCart }) {
 
   useEffect(() => {
     setImage(item.img);
-    setQuantity(1);  // Resetar a quantidade quando mudar de item
+    setQuantity(1);
   }, [item]);
 
 

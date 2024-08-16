@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { CartContext } from "../../contexts/CartContext";
 import styles from './Checkout.module.scss';
+import emptyCartImage from '../../img/cart/empty-cart.png';
 import { items } from '../AllData/AllData';
 
 const Checkout = () => {
@@ -98,7 +99,7 @@ const Checkout = () => {
           ) : (
             <div className={styles.emptyCartContainer}>
               <p>Seu carrinho está vazio.</p>
-              <img src="src/img/cart/empty-cart.png" alt="Empty cart" className={styles.emptyCartImage} />
+              <img src={emptyCartImage} alt="Carrinho vazio." className={styles.emptyCartImage} />
               <p className={styles.reminder}>Esqueceu algo?</p>
             </div>
           )}
